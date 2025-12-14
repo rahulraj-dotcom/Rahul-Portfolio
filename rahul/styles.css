@@ -1,0 +1,260 @@
+
+
+:root{
+    --green-color:#414A37;
+    --yellow-color:#99744A;
+    --white-color:#DBC2A6;
+    --soft-white-color:#F8F4F0;
+    --soft-gray-color:#B19F91;
+    --deep-color:#1c1c1cd3;    
+    --cream-lite-color:#FAF3E0;
+    --burnt-color:#C07C56;  
+    --dark-coca-color:#3b2f2fd2;      
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+html, body{
+    width: 100%;
+    min-height: 100vh;
+}
+body{
+    background-color: var(--dark-coca-color);
+}
+#page-1{
+    width: 100%;
+    height: 100vh;
+}
+#navbar{
+    width: 100%;
+    height: 110px;
+    background-color: #cac4c6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 120px;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+}
+#nav-left h1{
+    font-size: 45px;
+    color: red;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-right h3{
+    padding: 0 23px;
+    font-weight: 600;
+}
+#nav-right h3 a{
+    color: var(--deep-color);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#nav-right h3 a:hover{
+    color: red;
+    transition: all ease 0.5s;
+}
+#page1-info{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 130px;
+}
+#page1-info-left{
+    width: 50%;
+    height: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page1-info-left img{
+    width: 93%;
+    height: 85%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#page1-info-right{
+    width: 50%;
+    height: 100%;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: column;
+}
+#page1-info-right h2{
+    font-size: 50px;
+    padding-top:85px;
+    font-weight: 900;
+}
+#page1-info-right h2 span{
+    color: red;
+}
+
+#page1-info-right h4{
+    font-size: 32px;
+    font-weight: 900;
+}
+#page1-info-right h4 span{
+    color: red;
+}
+
+#page1-info-right p{
+    font-size: 22px;
+    padding-top: 10px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #a29d9d;
+}
+
+#icons{
+    padding-top: 30px;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+}
+#icon1{
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-coca-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+
+#icons i{
+    font-size: 33px;
+    color: #c0bbbb;
+}
+#icon1:hover{
+    background-color: red;
+    border: 3px solid red;
+    transition: all ease 0.5s;
+}
+
+#hire-button{
+    padding-top: 30px;
+}
+
+#hire-button button{
+    padding: 15px 30px;
+    font-size: 23px;
+    font-weight: 700;
+    background-color: var(--dark-coca-color);
+    border: 4px solid rgba(247, 134, 5, 0.988);
+    border-radius: 7px;
+    color: rgba(247, 134, 5, 0.988);
+    cursor: pointer;
+}
+
+#hire-button button:hover{
+    background-color: red;
+    color: #c0bbbb;
+    border: 4px solid red;
+    transition: all ease 0.5s;
+}
+
+
+
+
+   @media (max-width: 900px) {
+    #navbar {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #nav-right h3 {
+        padding: 0;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    #page1-info {
+        flex-direction: column;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    #page1-info-left,
+    #page1-info-right {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 900px) {
+    #page1-info-left img {
+        width: 310px;
+        height: 390px;
+        margin-top: 150px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #nav-left h1 {
+        font-size: 28px;
+    }
+
+    #page1-info-right h2 {
+        font-size: 30px;
+        padding-top: 15px;
+    }
+
+    #page1-info-right h4 {
+        font-size: 22px;
+    }
+
+    #page1-info-right p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #icons {
+        justify-content: center;
+    }
+}
+
+
+
+
+
